@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK/solutions/new]
+- Live Site URL: [https://jeffhill-io-four-card-feature-section.netlify.app/]
 
 ## My process
 
@@ -45,4 +45,5 @@ Users should be able to:
 
 - Website - [https://jeffhill.io]
 - Frontend Mentor - [https://www.frontendmentor.io/profile/webdevhill]
+
 # four-card-feature-section
