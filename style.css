@@ -1,0 +1,192 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Fonts
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600 */
+
+:root {
+    /* Colors */
+--red: hsl(0, 78%, 62%);
+--cyan: hsl(180, 62%, 55%);
+--orange: hsl(34, 97%, 64%);
+--blue: hsl(212, 86%, 64%);
+
+--very-dark-blue: hsl(234, 12%, 34%);
+--grayish-blue: hsl(229, 6%, 66%);
+--very--light--gray: hsl(0, 0%, 98%);
+
+--font-family:'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+    font-family: var(--font-family);
+    color: var(--grayish-blue);
+    background-color: var(--very--light--gray);
+    font-size: 0.9375rem;
+    height: 100vh;
+}
+
+h1 span, h2 {
+    color: var(--very-dark-blue)
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+.wrapper {
+    margin-top: 4rem;
+    padding: 1rem;
+}
+
+.intro {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    max-width: 25ch;
+    margin-bottom: 1rem;
+}
+
+h1 span {
+    font-weight: 600;
+}
+
+.lead {
+    max-width: 32ch;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-style: 1.15rem;
+}
+
+.card {
+    background-color: #fff;
+    height: 200px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    position: relative;
+    border-radius: 0.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+img {
+    width: 90px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+}
+
+.card-one {
+    border-top: 3px solid var(--cyan);
+}
+
+.card-two {
+    border-top: 3px solid var(--red);
+}
+
+.card-three {
+    border-top: 3px solid var(--orange);
+}
+
+.card-four {
+    border-top: 3px solid var(--blue);
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size:  2.125rem;
+    }
+
+   .lead {
+        max-width: 56ch;
+    }
+
+    h2 {
+        font-size:  1.5rem;
+    } 
+}
+
+@media (min-width: 1024px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 375px);
+        grid-template-rows: repeat(4, 125px);
+        gap: 1.75rem;
+    }
+
+    img {
+        margin: 1rem;
+    }
+
+    .card {
+        width: 375px;
+        height: 250px;
+    }
+    
+    .card-one {
+        grid-column: 1 / 2;
+        grid-row: 2  / 4;
+    }
+
+    .card-two {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .card-three {
+        grid-column: 2 / 3;
+        grid-row: 3 / 5;
+        margin-top: 0;
+    }
+    .card-four {
+        grid-column: 3 / 4;
+        grid-row: 2 / 4;
+    }
+}
